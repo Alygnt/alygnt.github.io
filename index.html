@@ -15,69 +15,18 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
-<!-- Menu -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dropdown Menu with Search Box</title>
-  <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head>
-<body>
-  <div class="wrapper">
-    <nav>
-      <input type="checkbox" id="show-search">
-      <input type="checkbox" id="show-menu">
-      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-      <div class="content">
-      <div class="logo"><a href="https://rdxlr.github.io/RDXLR">RDXLR</a></div>
-        <ul class="links">
-          <li><a href="https://rdxlr.github.io">Home</a></li>
-          <li>
-            <a href="tools/tools.html" class="desktop-link">Tools</a>
-            <input type="checkbox" id="show-tools">
-            <label for="show-tools">Services</label>
-            <ul>
-              <li><a href="NPhisher">Nphisher</a></li>
-              <li><a href="LPhisher">LPhisher</a></li>
-              <li><a href="Tunneler">Tunneler</a></li>
-              <li>
-                <a href="#">Install in Termux</a>
-                <ul>
-                  <li><a href="Metasploit-Termux">Metasploit</a></li>
-                  <li><a href="Nethunter-Termux">Nethunter</a></li>
-                  <li><a href="Ubuntu-Termux">Ubuntu</a></li>
-                  <li><a href="Webgoat-Termux">Webgoat</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="tags/tags.html">Tags</a></li>
-          <li>
-            <a href="socialmedia/socialmedia.html" class="desktop-link">Social Media</a>
-            <input type="checkbox" id="show-socialmedia">
-            <label for="show-socialmedia">Social media</label>
-            <ul>
-              <li><a href="https://github.com/rdxlr">Github</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="https://gitlab.com/RDXLR">Gitlab</a></li>
-            </ul>
-          </li>
-         <li><a href="https://rdxlr.github.io/RDXLR/">About</a></li>
-        </ul>
-      </div>
+<!-- add in head: --> <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!--Navigation bar-->
+<div id="nav-placeholder">
 
-<!-- Search -->
-      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-      <form action="https://rdxlr.github.io/search" class="search-box" role='search'>
-        <input type="search" placeholder="Search bar is not ready yet.." name='q'  value='' required>
-        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-      </form>
-    </nav>
-  </div>
-</body>
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
