@@ -34,6 +34,9 @@ nav .content .links{
   font-size: 30px;
   font-weight: 600;
 }
+.content .piclogo a{
+vertical-align: baseline;
+}
 .content .links li{
   list-style: none;
   line-height: 70px;
