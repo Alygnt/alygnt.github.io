@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RDXLR - Posts</title>
+<link rel="icon" type="image/x-icon" href="https://rdxlr.github.io/logo/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+
+<!-- copy to clipboard js-->
+<script>
+function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+}
+</script>
+<!--END copy to clipboard js-->
+
+<!-- add in head: --> <script src="https://rdxlr.github.io/nav/jquery-1.10.2.js"></script>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("https://rdxlr.github.io/nav/nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<!-- BODY -->
+<body class="w3-light-grey">
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header spacing-->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b> </b></h1>
+</header>
+<!--END Header spacing-->
+
+<!-- GRID -->
+<div class="w3-row">
+
+<!-- Post location-->
+<header class="w3-container w3-left w3-padding-small">
+  <a href="https://rdxlr.github.io">Home</a>
+  <a>></a>
+  <a href="https://rdxlr.github.io/posts">Posts</a>
+  <a>></a>
+  <a href="https://rdxlr.github.io">Post</a>
+</header>
+<!--END Post location -->
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-small">
+  <h1 align="left"><b>Heading</b></h1>
+  <h6 align="left"><i> Date Month Year</i></h6>
+</header>
+<!--END Header -->
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+<!-- CONTENT -->
+<header class="w3-container w3-center w3-padding-small">
+  <h2 align="centre"><b>Introduction </b></h2>
+<p class="w3-padding-small"  align="left">Introduction content need to be typed here...</p>
+</header>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+<header class="w3-container w3-center w3-padding-small">
+  <h2 align="centre"><b>Code text </b></h2>
+<p class="w3-padding-small"  align="left">Code introduction. Attach screenshot if needed. Code sample here</p>
+</header>
+<p class="codestyle"><span id="sc">HelloWorld!!</span></p>
+<p><a class="butt butt-blue" href="#" onclick="CopyToClipboard('sc');return false;">Copy Code to Clipboard</a></p>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<!-- END CONTENT -->
+<!-- END GRID -->
+</div><br>
+
+<!-- Related Posts-->
+<header class="w3-container w3-center w3-padding-small">
+  <h2 align="centre"><b>Code text </b></h2>
+</header>
+
+<!--END Related Posts-->
+
+<!-- END w3-content -->
+</div>
+</body>
+
+<!--Footer-->
+<div id="footer-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("https://rdxlr.github.io/footer/footer.html");
+});
+</script>
+<!--end of Footer-->
+
+</html>
